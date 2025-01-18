@@ -7,17 +7,20 @@ const Header = () => {
         <ul>
           <li>
             <Link href="/">
-              <p>Home</p>
+              <p>About Me</p>
             </Link>
           </li>
           <li>
-            <Link href="/about">
-              <p>About</p>
+            <Link href="/resume">
+              <p>Resume</p>
             </Link>
           </li>
           <li>
             <Link href="/contact">
               <p>Contact</p>
+            </Link>
+            <Link href="/portfolio">
+              <p>Portfolio</p>
             </Link>
           </li>
         </ul>
