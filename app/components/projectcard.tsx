@@ -12,16 +12,16 @@ interface ProjectCardProps {
 
 function ProjectCard({title, image, githubLink, deployedLink}: ProjectCardProps) {
     return (
-        <div className="project-card">
-            <div className="image-container">
-                <img src={image} alt={title} className="project-image" />
-                <div className="title-overlay">
+        <div className="relative">
+            <div className="relative">
+                <img src={image} alt={title} className="project-image w-full h-full object-cover" />
+                <div className="absolute inset-0 flex flex-col items-center justify-center  text-black">
                 {deployedLink ? (
             <a href={deployedLink} target="_blank" rel="noopener noreferrer" className="project-title-link">
               <h3>{title}</h3>
             </a>
           ) : (
-            <h3 className="project-title">{title}</h3>
+            <h3 className="text-xl mb-2">{title}</h3>
           )}
           <a href={githubLink} target="_blank" rel="noopener noreferrer" className="github-icon">
             <AiFillGithub  size="30" />

@@ -5,7 +5,7 @@ import { FaStackOverflow } from "react-icons/fa6";
 
 const Footer = () => {
     return (
-        <footer>
+        <footer className="bottom-0 p-6 z-50 flex items-center justify-center space-x-4 ">
         <a href = "https://github.com/andrewsoper1" target ="_blank" rel="noopener noreferrer">
             <AiOutlineGithub size={30} />
             </a>
