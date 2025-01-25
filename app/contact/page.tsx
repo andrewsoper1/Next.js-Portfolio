@@ -85,51 +85,56 @@ function Contact() {
 
 
     return (
-        <div className ="text-center">
-            <h3 className="contactme">Contact Me</h3>
-            <form className="form" onSubmit={handleFormSubmit}>
-        <input
-          value={name}
-          name="name"
-          onChange={handleInputChange}
-          onBlur={handleBlur}
-          type="text"
-          placeholder="Name"
-        />
+        <div className="flex items-center justify-center min-h-screen">
+            <div className="w-full max-w-md p-8 space-y-4 bg-white shadow-md rounded">
+                <h3 className="text-center text-2xl font-bold">Contact Me</h3>
+                <form className="space y-6 p-3" onSubmit={handleFormSubmit}>
+                    <input
+                        value={name}
+                        name="name"
+                        onChange={handleInputChange}
+                        onBlur={handleBlur}
+                        type="text"
+                        placeholder="Name"
+                        className="w-full p-3 border border-gray-300 rounded"
+                        />
         
-        <input
-          value={email}
-          name="email"
-          onChange={handleInputChange}
-          onBlur={handleBlur}
-          type="text"
-          placeholder="Email"
-        />
+                        <input
+                        value={email}
+                        name="email"
+                        onChange={handleInputChange}
+                        onBlur={handleBlur}
+                        type="text"
+                        placeholder="Email"
+                        className="w-full p-3 border border-gray-300 rounded"
+                        />
+                        
+                        <input
+                        value = {message}
+                        name= "message"
+                        onChange={handleInputChange}
+                        onBlur={handleBlur}
+                        type = "text"
+                        placeholder = "Message"
+                        className="w-full p-3 border border-gray-300 rounded"
+                        />
+                        
+                        <button type="submit" className="w-full p-3 space y-6 bg-teal-500 text-white rounded">
+                        Submit
+                        </button>
         
-        <input
-          value = {message}
-          name= "message"
-          onChange={handleInputChange}
-          onBlur={handleBlur}
-          type = "text"
-          placeholder = "Message"
-          />
-          
-        <button type="submit">
-          Submit
-        </button>
         
-        
-        {errors.length > 0 && (
-                    <div className="error-messages">
-                        {errors.map((error, index) => (
-                            <p key={index} className="error-text">{error}</p>
-                        ))}
-                    </div>
-                )}
-      </form>
+                        {errors.length > 0 && (
+                            <div className="error-messages">
+                                {errors.map((error, index) => (
+                                    <p key={index} className="text-red-500">{error}</p>
+                                ))}
+                            </div>
+                        )}
+                </form>
 
-    </div>
+            </div>
+     </div>
     )
 }
 

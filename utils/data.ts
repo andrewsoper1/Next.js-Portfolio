@@ -3,7 +3,7 @@ const projects = [
     {
         id: 1,
         title: "Vinyl-Vault",
-        image: "/vinylvault4.png",
+        image: "/vinylvault.png",
         githubLink: "https://github.com/KatanaFinKoi/Vinyl-Vault",
         deployedLink:"https://vinyl-vault2.onrender.com/",
         
@@ -19,7 +19,7 @@ const projects = [
         id: 3,
         
         title: "Redux-Retail",
-        image: "/reduxretail2.png",
+        image: "/reduxretail.png",
         githubLink: "https://github.com/andrewsoper1/Redux-Retail",
         deployedLink: "https://redux-retail.onrender.com/",
         
@@ -27,7 +27,7 @@ const projects = [
     {
         id: 4,
         title: "Candidate-Check",
-        image: "/candidatecheck1.png",
+        image: "/candidatecheck.png",
         githubLink: "https://github.com/andrewsoper1/Candidate-Check",
         deployedLink: "https://candidate-check-1.onrender.com/",
         
@@ -43,7 +43,7 @@ const projects = [
     {
         id: 6,
         title: "MERN-Book-Search-Engine",
-        image: "/MERN2.png",
+        image: "/MERN.png",
         githubLink: "https://github.com/andrewsoper1/MERN-Book-Search-Engine",
         deployedLink: "https://mern-book-search-engine-nezs.onrender.com/"
 
@@ -51,7 +51,7 @@ const projects = [
     {
         id: 7,
         title: "Kanban-Board",
-        image: "/reduxretail2.png",
+        image: "/kanbanboard.png",
         githubLink: "https://github.com/andrewsoper1/Kanban-Board",
         deployedLink: "https://kanban-board-201c.onrender.com/"
     },
